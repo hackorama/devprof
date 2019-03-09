@@ -6,9 +6,9 @@ function devprof() { # update to latest version
   echo
   echo "Updating using : bash <(curl -s https://raw.githubusercontent.com/hackorama/devprof/master/devprof.sh)"
   echo
-  read -p "Do you want to update the dev profile (y/n) " RESPONSE
+  read -p "Do you want to update the dev profile (y/n) " response
   echo
-  case $RESPONSE in
+  case $response in
         (y*) bash <(curl -s https://raw.githubusercontent.com/hackorama/devprof/master/devprof.sh) ;;
   esac
 }
