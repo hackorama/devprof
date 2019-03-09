@@ -59,3 +59,43 @@ Backed up existing profile files:
 Ready Steady Go !
 $
 ```
+
+## Features
+
+### Prompt
+
+Set a tag on prompt to identify your servers by nick name
+
+```
+hackorama@cloud ~  $
+hackorama@cloud ~  $ echo "GATEWAY" > .devprof/tag
+GATEWAY hackorama@cloud ~  $
+GATEWAY hackorama@cloud ~  $
+```
+```
+Set a temporaray tag on prompt
+
+```
+GATEWAY hackorama@cloud ~  $
+GATEWAY hackorama@cloud ~  $ export TAG="STAGING GATEWAY"
+STAGING GATEWAY hackorama@cloud ~  $
+STAGING GATEWAY hackorama@cloud ~  $
+STAGING GATEWAY hackorama@cloud ~  $ unset TAG
+GATEWAY hackorama@cloud ~  $
+GATEWAY hackorama@cloud ~  $
+```
+
+### Git
+
+- Git command completion
+- Git status on prompt
+
+```
+DEV hackorama@hackorama devprof  (master =) $ vi README.md
+DEV hackorama@hackorama devprof  (master *=) $
+```
+
+### Vim
+
+Colors, Syntax and Status Line
+
