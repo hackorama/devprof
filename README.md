@@ -68,12 +68,12 @@ Set a tag on prompt to identify your servers by nick name
 
 ```
 hackorama@cloud ~  $
-hackorama@cloud ~  $ echo "GATEWAY" > .devprof/tag
+hackorama@cloud ~  $ echo "GATEWAY" > ~/.devprof/tag
 GATEWAY hackorama@cloud ~  $
 GATEWAY hackorama@cloud ~  $
 ```
 
-Set a temporaray tag on prompt
+Set a temporary tag on prompt
 
 ```
 GATEWAY hackorama@cloud ~  $
@@ -84,6 +84,12 @@ STAGING GATEWAY hackorama@cloud ~  $ unset TAG
 GATEWAY hackorama@cloud ~  $
 GATEWAY hackorama@cloud ~  $
 ```
+
+> Can use color escape sequence and unicode symbols or emojis for the tag
+>
+> $ export TAG="\e[34m▶\e[0m BIONIC"
+>
+> $ echo "\e[31mRED\e[0m ROCK" >  ~/.devprof/tag
 
 ### Git
 
