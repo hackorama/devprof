@@ -72,7 +72,7 @@ hackorama@cloud ~  $ echo "GATEWAY" > .devprof/tag
 GATEWAY hackorama@cloud ~  $
 GATEWAY hackorama@cloud ~  $
 ```
-```
+
 Set a temporaray tag on prompt
 
 ```
