@@ -99,3 +99,5 @@ DEV hackorama@hackorama devprof  (master *=) $
 
 Colors, Syntax and Status Line
 
+![Vim Screenshot](devprof-vim-screenshot.png)
+
