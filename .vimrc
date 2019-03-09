@@ -43,7 +43,7 @@ set laststatus=2
 
 hi StatusLine ctermbg=black
 
-set statusline=💡         " icon
+set statusline=▶          " emoji or unicode symbol
 set statusline+=\         " space
 set statusline+=%t        " filename
 set statusline+=\         " space
