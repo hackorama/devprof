@@ -12,7 +12,7 @@ set -o pipefail
 # bash
 [ -f ~/.bashrc ] && mv ~/.bashrc ~/.bashrc.$(date +%F-%T).bak
 [ -f ~/.bash_profile ] && mv ~/.bash_profile ~/.bash_profile.$(date +%F-%T).bak
-curl -s -o ~/.bash_profile https://raw.githubusercontent.com/hackorama/devprof/master/.bashrc
+curl -s -o ~/.bashrc https://raw.githubusercontent.com/hackorama/devprof/master/.bashrc
 curl -s -o ~/.bash_profile https://raw.githubusercontent.com/hackorama/devprof/master/.bash_profile
 # vim
 [ -f ~/.vimrc ] && mv ~/.vimrc ~/.vimrc.$(date +%F-%T).bak
