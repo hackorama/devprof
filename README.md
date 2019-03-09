@@ -1,4 +1,8 @@
-# Bash, Vim, Git Dev Profile
+# Dev Profile
+
+Development profile for bash, vim, git
+
+![Screenshot](devprof-screenshot.png)
 
 ## Install
 
@@ -55,4 +59,3 @@ Backed up existing profile files:
 Ready Steady Go !
 $
 ```
-
