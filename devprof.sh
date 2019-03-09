@@ -46,4 +46,4 @@ echo
 echo "Ready Steady Go !"
 
 # start
-bash -l
+exec bash -l
