@@ -38,7 +38,7 @@ ls -1 ~/.bashrc ~/.bash_profile ~/.vimrc ~/.vim/colors/monokai.vim ~/.devprof/*
 if [ `ls -l ~/.bashrc.*.bak ~/.bash_profile.*.bak ~/.vimrc.*.bak 2>/dev/null | wc -l` -gt 0 ];
 then
   echo
-  echo "Backed up existing profile files (.bashrc, .bash_profile, .vimrc):"
+  echo "Backed up existing profile files:"
   echo
   ls -1 ~/.bashrc.*.bak ~/.bash_profile.*.bak ~/.vimrc.*.bak 2>/dev/null
 fi
