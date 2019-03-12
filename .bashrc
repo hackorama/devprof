@@ -26,9 +26,12 @@ function dph() {
 }
 
 function __show_tag() { # show optional system id tag in prompt
-  if [ ! -z "$TAG" ]; then
+  if [ ! -z "$TAG" ]; then         # env
     echo -e "$TAG "
-  elif [ -f ~/.devprof/tag ]; then
+  elif [ -x ~/.devprof/tag ]; then # script
+    TAG=$(~/.devprof/tag)
+    echo -e "$TAG "
+  elif [ -f ~/.devprof/tag ]; then # file
     TAG=$(cat ~/.devprof/tag)
     echo -e "$TAG "
   fi

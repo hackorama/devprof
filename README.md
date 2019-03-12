@@ -85,6 +85,19 @@ GATEWAY hackorama@cloud ~  $
 GATEWAY hackorama@cloud ~  $
 ```
 
+The tag could also be the output of a script, just make the tag file executable.
+
+```
+ hackorama@home ~  $ touch .devprof/tag
+ hackorama@home ~  $ chmod +x .devprof/tag
+ hackorama@home ~  $ vi .devprof/tag
+ 2.07 2.18 2.34 hackorama@home ~  $
+ 1.99 2.16 2.34 hackorama@home ~  $ cat .devprof/tag
+uptime | awk -F'[a-z]:' '{ print $2}'
+ 2.07 2.18 2.34 hackorama@home ~  $
+ 1.91 2.14 2.33 hackorama@home ~  $
+```
+
 > Can use color escape sequence and unicode symbols or emojis for the tag
 >
 > $ export TAG="\e[34m▶\e[0m BIONIC"
