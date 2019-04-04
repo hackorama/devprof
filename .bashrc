@@ -37,6 +37,13 @@ function __show_tag() { # show optional system id tag in prompt
   fi
 }
 
+# applies to only interactive shells
+
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
 # eye candy
 
 export TERM=xterm-256color
