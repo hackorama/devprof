@@ -5,7 +5,7 @@
 " escape the mac touch bar
 
 inoremap jj <esc>
-inoremap jk <esc>
+inoremap JJ <esc>
 
 " colors
 
