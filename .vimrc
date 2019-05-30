@@ -11,7 +11,6 @@ inoremap JJ <esc>
 
 " wget https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monokai.vim -O ~/.vim/colors/monokai.vim
 colorscheme monokai
-syntax enable
 
 " syntax
 
@@ -81,5 +80,13 @@ let &t_te.="\e[0 q"
 
 " spelling
 
-" setlocal spell spelllang=en_us " uncomment to enable by default
+setlocal spell spelllang=en_us " enabled by default for all
 hi SpellBad ctermfg=009 ctermbg=000 guifg=#ff0000 guibg=#ffffff gui=none
+augroup sourceSpell            " disable for source code
+    autocmd!
+    autocmd FileType c setlocal nospell
+    autocmd FileType cpp setlocal nospell
+    autocmd FileType go setlocal nospell
+    autocmd FileType java setlocal nospell
+    autocmd FileType python setlocal nospell
+augroup END
