@@ -88,10 +88,13 @@ source ~/.devprof/git-prompt.sh
 
 # history
 
-HISTCONTROL=ignoreboth
+HISTCONTROL=ignoreboth # ignore space and repeated commands
 HISTSIZE=1000
 HISTFILESIZE=2000
-shopt -s histappend # append
+HISTIGNORE='ls:history'
+HISTTIMEFORMAT='%F %T '
+shopt -s histappend # append do not overwrite
+shopt -s cmdhist # fit one cmd per line
 
 # screen
 
