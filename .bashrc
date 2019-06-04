@@ -117,6 +117,28 @@ if hash kubectl 2>/dev/null; then
   complete -F __start_kubectl k
 fi
 
+# MacOS iterm2 shell integration (https://iterm2.com/documentation-badges.html)
+# 1. curl -L https://iterm2.com/shell_integration/bash -o ~/.devprof/iterm2_shell_integration.bash
+# 2. Set Preferences>Profiles>General>Badge : \(user.badge)
+# 3. export BADGE=cloud
+if [ -f ~/.devprof/iterm2_shell_integration.bash ]; then
+  source ~/.devprof/iterm2_shell_integration.bash
+  function __show_badge() { # show optional system id tag in prompt
+    if [ ! -z "$BADGE" ]; then         # env
+      echo -e "$BADGE "
+    elif [ -x ~/.devprof/badge ]; then # script
+      BADGE=$(~/.devprof/badge)
+      echo -e "$BADGE "
+    elif [ -f ~/.devprof/badge ]; then # file
+      BADGE=$(cat ~/.devprof/badge)
+      echo -e "$BADGE "
+    fi
+  }
+  function iterm2_print_user_vars() {
+    iterm2_set_user_var badge $(__show_badge)
+  }
+fi
+
 # local only profile if any
 
 if [ -f ~/.bashrc_local ]; then
