@@ -120,3 +120,15 @@ Colors, Syntax and Status Line
 
 ![Vim Screenshot](devprof-vim-screenshot.png)
 
+### iTerm2 Badge
+
+Works with [iTerm2 Shell Integration Badges](https://www.iterm2.com/documentation-badges.html).
+
+![iTerm2 Badge Screenshot](iterm2-badge-screenshot.png)
+
+- `curl -L https://iterm2.com/shell_integration/bash -o ~/.devprof/iterm2_shell_integration.bash`
+- Set **Preferences>Profiles>General>Badge** : `\(user.badge)`
+- Use env : `export BADGE=devbox`
+- Use file : `echo "CLOUD" > ~/.devprof/badge`
+- Use script : `echo "date +"%H:%M" > ~/.devprof/badge ; chmod +x ~/.devprof/badge`
+
