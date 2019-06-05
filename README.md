@@ -122,6 +122,8 @@ Colors, Syntax and Status Line
 
 ### iTerm2 Badge
 
+Optional feature when using iTerm2 on MacOS.
+
 Works with [iTerm2 Shell Integration Badges](https://www.iterm2.com/documentation-badges.html).
 
 ![iTerm2 Badge Screenshot](iterm2-badge-screenshot.png)
