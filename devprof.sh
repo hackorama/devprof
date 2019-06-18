@@ -27,6 +27,8 @@ curl -s -o ~/.vim/colors/monokai.vim https://raw.githubusercontent.com/sickill/v
 mkdir -p ~/.devprof
 curl -s -o ~/.devprof/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 curl -s -o ~/.devprof/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+# MacOS iterm2 shell integration for badges https://iterm2.com/documentation-badges.html
+curl -L https://iterm2.com/shell_integration/bash -o ~/.devprof/iterm2_shell_integration.bash
 
 # enable
 source ~/.bash_profile
